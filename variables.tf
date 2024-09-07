@@ -13,5 +13,17 @@ variable "common_tags" {
 variable "vpc_tags" {
     type = map 
     default = {}
+}
+variable "project_name" {
+    type = string
+  
+}
+variable "environment" {
+    type = string
+  
+}
+variable "igw-tags" {
+    type = map 
+    default = {}
   
 }
