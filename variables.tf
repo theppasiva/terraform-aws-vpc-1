@@ -62,5 +62,31 @@ variable "database_subnets_cidr" {
 
 variable "database_subnets_tags" {
     default = {}
-  
+}
+
+variable "nat_gateway_tags" {
+    default = {}
+}
+
+variable "public_route_table_tags" {
+    default = {}
+}
+
+variable "private_route_table_tags" {
+    default = {}
+}
+
+variable "database_route_table_tags" {
+    default = {}
+}
+variable "is_peering_required" {
+    type = bool
+    default = false
+}
+variable "acceptor_vpc_id" {
+    type = string
+    default = ""
+}
+variable "vpc_peering_tags" {
+    default = {}
 }
